@@ -1,0 +1,15 @@
+{
+  "name": "reddit-bot",
+  "version": "1.0.0",
+  "description": "Reddit bot to fuck around with",
+  "main": "index.js",
+  "scripts": {
+    "test": "./test.js"
+  },
+  "author": "Jonathon Seth Murphy",
+  "license": "ISC ",
+  "dependencies": {
+    "form-data": "^2.3.3",
+    "querystring": "^0.2.0"
+  }
+}
