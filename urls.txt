@@ -1,5 +1,5 @@
 // Generate Code
-https://www.reddit.com/api/v1/authorize?client_id=vOtx9kSBuOxmog&response_type=code&state=bumblebees&redirect_uri=http%3A%2F%2Flocalhost%3A8080&duration=permanent&scope=read
+https://www.reddit.com/api/v1/authorize?client_id=vOtx9kSBuOxmog&response_type=code&state=bumblebees&redirect_uri=http%3A%2F%2Flocalhost%3A8080&duration=permanent&scope=identity%20read%20submit%20edit
 
 
 https://www.reddit.com/api/v1/access_token

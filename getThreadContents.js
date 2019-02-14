@@ -22,11 +22,14 @@ http.get(options, (resp) => {
     data += chunk;
   });
   resp.on('end', () => {
+    let threadDataCompleted = [];
     for (i = 0; i < JSON.parse(data).length; i++) {
-      let threadData = JSON.parse(data)[1].data.children[i].data;
-      // fs.writeFile("./leaderboardComments.json", JSON.stringify(threadData));
-      console.log(threadData);
+      let threadDataTemp = JSON.parse(data)[1].data.children[i].data;
+      threadDataCompleted.push(threadDataTemp);
+      console.log(threadDataTemp + 'End of Part ' + i);
     }
+    console.log(threadDataCompleted + ' Completed JSON');
+    fs.writeFile("./leaderboardComments.json", JSON.stringify(threadDataCompleted));
   });
 }).on("error", (err) => {
   console.log("Error: " + err);
