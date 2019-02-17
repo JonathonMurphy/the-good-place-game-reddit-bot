@@ -1,5 +1,5 @@
 const fs = require("fs");
-const leaderboardComments = require ("./leaderboardComments.json");
+const leaderboardComments = require ("./json/leaderboardComments.json");
 
 let userScore = {};
 let threadScores = [];
@@ -24,4 +24,4 @@ for (i = 0; i < leaderboardComments.length; i++) {
 
 console.log(threadScores.sort(compare));
 
-fs.writeFile("./leaderboardScores.json", JSON.stringify(threadScores.sort(compare)))
+fs.writeFile("./json/leaderboardScores.json", JSON.stringify(threadScores.sort(compare)))

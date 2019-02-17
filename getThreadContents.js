@@ -29,7 +29,7 @@ http.get(options, (resp) => {
       console.log(threadDataTemp + 'End of Part ' + i);
     }
     console.log(threadDataCompleted + ' Completed JSON');
-    fs.writeFile("./leaderboardComments.json", JSON.stringify(threadDataCompleted));
+    fs.writeFile("./json/leaderboardComments.json", JSON.stringify(threadDataCompleted));
   });
 }).on("error", (err) => {
   console.log("Error: " + err);
