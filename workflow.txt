@@ -1,0 +1,5 @@
+renewAccessToken.js
+getThreadContents.js
+pullScores.js
+buildComment.js
+editComment.js
